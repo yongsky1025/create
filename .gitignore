@@ -1,3 +1,8 @@
+# File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
+# Created by https://www.toptal.com/developers/gitignore/api/java,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,react
+
+### Java ###
 # Compiled class file
 *.class
 
@@ -23,28 +28,22 @@
 hs_err_pid*
 replay_pid*
 
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
 
-# Dump file
-*.stackdump
+node_modules
+bower_components
 
-# Folder config file
-[Dd]esktop.ini
+*.sublime*
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+psd
+thumb
+sketch
 
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+# End of https://www.toptal.com/developers/gitignore/api/java,react
 
-# Windows shortcuts
-*.lnk
-asdfsadf
+# Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+
