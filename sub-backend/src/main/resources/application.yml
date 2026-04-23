@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: sub-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/sub_project
+    # 시간 및 문자형태 깨짐 예방용
+    # url: jdbc:mysql://localhost:3306/sub_project?serverTimezone=Asia/Seoul&characterEncoding=utf8mb4&useUnicode=true
+    username: sub_project
+    password: 1234
+    # spring boot에서 추론해주지 않을때 직접 명시
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    sub_project: info
+    com.soldesk: debug
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
